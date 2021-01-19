@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>13Up&Down</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="title">13Up&Down</h1>
+        <div>
+            <button class="addPlayer">Add Player &#43;</button>
+            <button class="startGame">start</button>
+        </div>
+        <div>
+            <h2 class='roundCounter'>Round of <img class='roundCard' src='img/3.png' alt='3'/></h2>
+            <h2 class="gameOver">Game Over!</h2>
+        </div>
+        <div class="playerField">
+            <div class="player1">
+                <input type="text" class="playerNameInput" id='player1NameInput' placeholder="Player 1 Name">
+                <h2 class='player1Name'></h2>
+                <p class='score' id='p1score'>0</p>
+                <input type="text" class='scoreInput' id='p1scoreInput' placeholder='Round Score'>
+            </div>
+            <div class="player2">
+                <input type="text" class="playerNameInput" id='player2NameInput' placeholder="Player 2 Name">
+                <h2 class='player2Name'></h2>
+                <p class='score' id='p2score'>0</p>
+                <input type="text" class='scoreInput' id='p2scoreInput' placeholder='Round Score'>
+            </div>
+        </div>
+        <button class='nextRound'>Next</button>
+        <button class='playAgain'>Play Again</button>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src='js/app.js'></script>
+</body>
+
+</html>
